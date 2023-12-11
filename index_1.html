@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Анімейшин</title>
+<style type="text/css">
+	body{
+		background-color: #00DCFF70;
+		padding: 50px;
+	}
+	.content-circle{
+		width: 100px;
+		height: 100px;
+		background-color: #e9f719;
+		border-radius: 50%;
+		position: relative;
+		left: 0%;
+		animation-name: my-circle;
+		animation-duration: 2s;
+		animation-direction: alternate;
+		animation-iteration-count: infinite;
+		animation-timing-function: linear;
+	}
+
+	@keyframes my-circle{
+		0%{
+			left: 0px;
+			top: 0px;
+			transform: rotate(0deg);
+			border-radius: 50%;
+		}
+		10%{
+			left: 100px;
+			top: 300px;
+			transform: rotate(70deg);
+			background-color: #db0d25;
+		}
+		20%{
+			left: 150px;
+			top: 200px;
+			transform: rotate(110deg);
+		}
+		30%{
+			left: 200px;
+			top: 150px;
+			transform: rotate(130deg);
+			border-radius: 0;
+		}
+		40%{
+			left: 250px;
+			top: 200px;
+			transform: rotate(150deg);
+		}
+		50%{
+			left: 300px;
+			top: 300px;
+			transform: rotate(170deg);
+			background-color: #19f74d;
+		}
+		60%{
+			left: 350px;
+			top: 250px;
+			transform: rotate(220deg);
+			border-radius: 0;
+		}
+		70%{
+			left: 400px;
+			top: 300px;
+			transform: rotate(260deg);
+		}
+		80%{
+			left: 440px;
+			top: 300px;
+			transform: rotate(290deg);
+			background-color: #19bcf7;
+		}
+		90%{
+			left: 480px;
+			top: 300px;
+			transform: rotate(320deg);
+			border-radius: 50%;
+		}
+		100%{
+			
+			left: 520px;
+			top: 300px;
+			transform: rotate(360deg);
+			background-color: #19bcf7;
+		}
+	}
+</style>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="content">
+			<div class="content-circle"></div>
+		</div>
+	</div>
+</body>
+</html>
